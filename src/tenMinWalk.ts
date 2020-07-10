@@ -1,3 +1,7 @@
-export const validWalk = (walk: string[]): boolean => {
-  return false 
+export const validWalk = (walk: string[]) => {
+  if (walk.length !== 10) {
+    return false
+  } else {
+    return true 
+  }
 }
