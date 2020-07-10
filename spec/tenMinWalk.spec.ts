@@ -12,9 +12,15 @@ describe('validWalk', () => {
         let walk = ['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w']
         expect(validWalk(walk)).to.equal(true)
     })
-    // it('returns false if n does not equal s', () => {
-    //    let walk = ['s', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w']
-    //    expect(validWalk(walk)).to.equal(false)
-    // });
+
+    it('returns false if n does not equal s', () => {
+       let walk = ['s', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w']
+       expect(validWalk(walk)).to.equal(false)
+    });
+
+    it('returns false if w does not equal e', () => {
+        let walk = ['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w']
+        expect(validWalk(walk)).to.equal(false)
+     });
 });
 
